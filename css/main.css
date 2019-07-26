@@ -171,7 +171,7 @@ textarea {
 
 .clearfix:before,
 .clearfix:after {
-  content: " ";
+  content: ' ';
   /* 1 */
   display: table;
   /* 2 */
@@ -220,18 +220,18 @@ textarea {
     text-decoration: underline;
   }
   a[href]:after {
-    content: " (" attr(href) ")";
+    content: ' (' attr(href) ')';
   }
   abbr[title]:after {
-    content: " (" attr(title) ")";
+    content: ' (' attr(title) ')';
   }
   /*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
-  a[href^="#"]:after,
-  a[href^="javascript:"]:after {
-    content: "";
+  a[href^='#']:after,
+  a[href^='javascript:']:after {
+    content: '';
   }
   pre {
     white-space: pre-wrap !important;
@@ -264,3 +264,26 @@ textarea {
   }
 }
 
+/* ==========================================================================
+
+My Styles
+  
+========================================================================== */
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(12, fr);
+  grid-gap: 1rem;
+}
+.article {
+  width: 100vw;
+  height: 100vh;
+}
+.aboutus {
+}
+.mision {
+}
+.services {
+}
+.contact {
+}
