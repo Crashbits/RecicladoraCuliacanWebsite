@@ -12,6 +12,10 @@
 
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Hind+Madurai|Montserrat:400,900&display=swap"
+      rel="stylesheet"
+    />
 
     <meta name="theme-color" content="#fafafa" />
   </head>
@@ -25,30 +29,34 @@
       </p>
     <![endif]-->
 
-    <header class="row">
-      <nav>
+    <header id="menu" class="row">
+      <div class="logo">
         <img
           src="./img/logo.svg"
           alt="Recicladora Culiacan Logo"
           class="logo"
+          href="#home"
         />
-        <li>Nosotros</li>
-        <li>Misión</li>
-        <li>Servicios</li>
-        <li>Materiales</li>
-        <li>Contacto</li>
+      </div>
+      <nav class="navegacion">
+        <a href="#nosotros">Nosotros</a>
+        <a href="#mision">Misión</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#materiales">Materiales</a>
+        <a href="#contacto">Contacto</a>
       </nav>
     </header>
 
-    <article id="home">
-      <section class="row">
-        <div>
-          <h2 class="left-align">Recicla con<br /><span>Nosotros</span></h2>
-          <p>
-            En Recicladora Culiacan compramos materiales para reciclaje, los
-            cuales incluyen distintos tipos de plasticos, papeles y carton.
-          </p>
-        </div>
+    <article id="home" class="row">
+      <section id="hometext">
+        <h1>Recicla con<br /><span>Nosotros</span></h1>
+        <hr>
+        <p>
+          En Recicladora Culiacan compramos materiales para reciclaje, los
+          cuales incluyen distintos tipos de plasticos, papeles y carton.
+        </p>
+      </section>
+      <section id="homeimg">
         <img
           src="./img/reciclaconnosotros.svg"
           alt="Recicla con Recicladora Culiacan"
@@ -56,49 +64,55 @@
       </section>
     </article>
 
-    <article id="nosotros">
-      <section class="row">
-        <h2 class="right-align">Nosotros</h2>
+    <article id="nosotros" class="row">
+      <section id="nosotrostext">
+        <h1 class="right-align">Nosotros</h1>
         <p>
           Somos una empresa con presencia en el noroeste del pais que acopia una
           gran gama de materiales reciclables para su correcto manejo y
           procesamiento. Separamos las botellas por su respectiva clasificacion
           para enviarse a proceso a distintas plantas del pais. Otro de los
           procesos importantes que realizamos es la trituracion de plasticos de
-          inyeccion.
+          inyección.
         </p>
+      </section>
+      <section id="nosotrosimg">
         <img src="./img/nosotros.svg" alt="Nosotros" />
       </section>
     </article>
 
-    <article id="mision">
-      <section class="row">
-        <h2 class="left-align">Misión</h2>
+    <article id="mision" class="row">
+      <section id="misiontext">
+        <h1 class="left-align">Misión</h1>
         <p>
           Nuestra misión es generar un impacto positivo en el medio ambiente
           mediante la valorización de los materiales reciclales para incentivar
-          su recoleccion y recuperacion, creando a su vez empleo,
+          su recolección y recuperación, creando a su vez empleo,
           sustentabilidad y bienestar social.
         </p>
+      </section>
+      <section id="misionimg">
         <img src="./img/mision.svg" alt="Mision" />
       </section>
     </article>
 
     <article id="servicios">
+      <div class="row">
+        <h1 class="serviciostittle">Servicios</h1>
+      </div>
       <section class="row">
-        <h2>Servicios</h2>
-        <div>
-          <img src="./img/destruccionfiscal.svg" alt="Destruccion Fiscal" />
+        <div class="destruccionfiscal">
+          <img src="./img/destruccionfiscal.svg" alt="Destrucción Fiscal" />
           <h3>Destrucción Fiscal</h3>
         </div>
-        <div>
+        <div class="plasticosagricolas">
           <img
             src="./img/plasticosagricolas.svg"
             alt="Disposición de Plásticos Agrícolas"
           />
           <h3>Disposición de Plásticos Agrícolas</h3>
         </div>
-        <div>
+        <div class="serviciosrecoleccion">
           <img
             src="./img/servicioderecoleccion.svg"
             alt="Servicio de Recoleccion"
@@ -110,42 +124,46 @@
 
     <article id="materiales">
       <section class="row">
-        <h2>Materiales</h2>
-        <div>
+        <h1>Materiales</h1>
+      </section>
+      <section class="row">
+        <div class="pet">
           <img src="./img/pet.svg" alt="PET" />
           <h3>PET</h3>
         </div>
-        <div>
+        <div class="hdpesoplado">
           <img src="./img/HDPE.svg" alt="HDPE Natural y Multicolor" />
           <h3>HDPE Natural Y Multicolor</h3>
         </div>
-        <div>
+        <div class="plasticosinyeccion">
           <img
             src="./img/plasticosinyeccion.svg"
             alt="PP y HDPE de Inyección"
           />
           <h3>PP y HDPE de Inyección</h3>
         </div>
-        <div>
+      </section>
+      <section class="row">
+        <div class="papel">
           <img src="./img/papel.svg" alt="Papel" />
           <h3>Papel</h3>
         </div>
-        <div>
+        <div class="carton">
           <img src="./img/carton.svg" alt="Carton" />
           <h3>Carton</h3>
         </div>
       </section>
     </article>
 
-    <footer id="contacto">
-      <section class="row">
-        <h2>Contacto</h2>
-        <p></p>
-        <div>
-          <img src="./img/whatsapp.svg" alt="Whatsapp" />
-          <img src="./img/facebook.svg" alt="Facebook" />
-          <img src="./img/email.svg" alt="Correo Electronico" />
-        </div>
+    <footer id="contacto" class="row">
+      <section id="contactotext">
+        <h1>Contacto</h1>
+        <p>direccion de contacto</p>
+      </section>
+      <section id="contactoimg">
+        <img src="./img/whatsapp.svg" alt="Whatsapp" />
+        <img src="./img/facebook.svg" alt="Facebook" />
+        <img src="./img/email.svg" alt="Correo Electronico" />
       </section>
     </footer>
 

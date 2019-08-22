@@ -43,10 +43,6 @@ html {
 
 hr {
   display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
   padding: 0;
 }
 
@@ -264,236 +260,198 @@ textarea {
   }
 }
 
-/* ==========================================================================
+/* ===========================================================================
 
 GRID
 
-========================================================================== */
+=========================================================================== */
 
 /* ROW */
 .row {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-gap: 1rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
-.col-xs-12 {
-  grid-column: span 12;
-}
-
-.col-xs-11 {
-  grid-column: span 11;
-}
-
-.col-xs-10 {
-  grid-column: span 10;
-}
-
-.col-xs-9 {
-  grid-column: span 9;
-}
-
-.col-xs-8 {
-  grid-column: span 8;
-}
-
-.col-xs-7 {
-  grid-column: span 7;
-}
-
-.col-xs-6 {
-  grid-column: span 6;
-}
-
-.col-xs-5 {
-  grid-column: span 5;
-}
-
-.col-xs-4 {
-  grid-column: span 4;
-}
-
-.col-xs-3 {
-  grid-column: span 3;
-}
-
-.col-xs-2 {
-  grid-column: span 2;
-}
-
-.col-xs-1 {
-  grid-column: span 1;
-}
-
-@media (min-width: 768px) {
-  .col-sm-12 {
-    grid-column: span 12;
-  }
-
-  .col-sm-11 {
-    grid-column: span 11;
-  }
-
-  .col-sm-10 {
-    grid-column: span 10;
-  }
-
-  .col-sm-9 {
-    grid-column: span 9;
-  }
-
-  .col-sm-8 {
-    grid-column: span 8;
-  }
-
-  .col-sm-7 {
-    grid-column: span 7;
-  }
-
-  .col-sm-6 {
-    grid-column: span 6;
-  }
-
-  .col-sm-5 {
-    grid-column: span 5;
-  }
-
-  .col-sm-4 {
-    grid-column: span 4;
-  }
-
-  .col-sm-3 {
-    grid-column: span 3;
-  }
-
-  .col-sm-2 {
-    grid-column: span 2;
-  }
-
-  .col-sm-1 {
-    grid-column: span 1;
-  }
-}
-
-@media (min-width: 992px) {
-  .col-md-12 {
-    grid-column: span 12;
-  }
-
-  .col-md-11 {
-    grid-column: span 11;
-  }
-
-  .col-md-10 {
-    grid-column: span 10;
-  }
-
-  .col-md-9 {
-    grid-column: span 9;
-  }
-
-  .col-md-8 {
-    grid-column: span 8;
-  }
-
-  .col-md-7 {
-    grid-column: span 7;
-  }
-
-  .col-md-6 {
-    grid-column: span 6;
-  }
-
-  .col-md-5 {
-    grid-column: span 5;
-  }
-
-  .col-md-4 {
-    grid-column: span 4;
-  }
-
-  .col-md-3 {
-    grid-column: span 3;
-  }
-
-  .col-md-2 {
-    grid-column: span 2;
-  }
-
-  .col-md-1 {
-    grid-column: span 1;
-  }
-}
-
-@media (min-width: 1200px) {
-  .col-lg-12 {
-    grid-column: span 12;
-  }
-
-  .col-lg-11 {
-    grid-column: span 11;
-  }
-
-  .col-lg-10 {
-    grid-column: span 10;
-  }
-
-  .col-lg-9 {
-    grid-column: span 9;
-  }
-
-  .col-lg-8 {
-    grid-column: span 8;
-  }
-
-  .col-lg-7 {
-    grid-column: span 7;
-  }
-
-  .col-lg-6 {
-    grid-column: span 6;
-  }
-
-  .col-lg-5 {
-    grid-column: span 5;
-  }
-
-  .col-lg-4 {
-    grid-column: span 4;
-  }
-
-  .col-lg-3 {
-    grid-column: span 3;
-  }
-
-  .col-lg-2 {
-    grid-column: span 2;
-  }
-
-  .col-lg-1 {
-    grid-column: span 1;
-  }
-}
-
-/* ==========================================================================
+/* ===========================================================================
 
 My Styles
   
-========================================================================== */
+=========================================================================== */
 
-.article {
-  width: 100vw;
-  height: 100vh;
-}
-.aboutus {
-}
-.mision {
-}
-.services {
-}
-.contact {
-}
 :root {
   --logo-color: #93c34b;
   --primary-color: #6cd948;
+}
+
+body {
+  font-family: 'Hind Madurai', sans-serif;
+  width: 100vw;
+}
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  margin: 0;
+  text-transform: uppercase;
+}
+nav a {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: var(--logo-color);
+  text-decoration: none;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-transform: uppercase;
+  grid-column: span 2;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+hr {
+  border: 10px solid var(--primary-color);
+}
+
+@media (min-width: 768px) {
+}
+@media (min-width: 992px) {
+  #menu {
+    grid-area: menu;
+    position: fixed;
+    z-index: 20;
+    right: 0;
+    left: 0;
+    top: 0;
+    background-color: #fff;
+    height: 100px;
+    -webkit-box-shadow: 0 3px 5px 0 rgba(50, 50, 50, 0.3);
+    -moz-box-shadow: 0 3px 5px 0 rgba(50, 50, 50, 0.3);
+    box-shadow: 0 3px 5px 0 rgba(50, 50, 50, 0.3);
+  }
+  .navegacion {
+    grid-column: span 10;
+    grid-column-start: 4;
+    grid-column-end: 13;
+    align-self: center;
+  }
+  .navegacion a:last-child {
+    padding-right: 0;
+  }
+  .navegacion a:first-child {
+    padding-left: 0;
+  }
+  .logo {
+    grid-column: span 1;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    align-self: center;
+    width: 95%;
+  }
+  #home {
+    padding-top: 110px;
+    align-self: center;
+    justify-self: center;
+  }
+  #home h1 {
+    font-size: 3.28rem;
+    line-height: 0.8;
+  }
+
+  #home h1 span {
+    font-size: 4rem;
+    line-height: 0.8;
+  }
+  #hometext {
+    grid-area: hometext;
+    grid-column: span 4;
+    align-self: flex-end;
+  }
+  #homeimg {
+    grid-area: homeimg;
+    grid-column: span 8;
+    grid-column-start: 6;
+    grid-column-end: 13;
+  }
+  #nosotros {
+  }
+  #nosotrostext {
+    grid-area: nosotrostext;
+    grid-column: span 6;
+  }
+  #nosotrosimg {
+    grid-area: nosotrosimg;
+    grid-column: span 6;
+  }
+  #mision {
+  }
+  #misiontext {
+    grid-area: misiontext;
+    grid-column: span 6;
+  }
+  #misionimg {
+    grid-area: misionimg;
+    grid-column: span 6;
+  }
+  #servicios {
+    margin-left: 0%;
+    margin-right: 0%;
+    background-color: var(--primary-color);
+  }
+  .serviciostittle {
+    grid-column: span 2;
+  }
+  .destruccionfiscal {
+    grid-column: span 2;
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+  .plasticosagricolas {
+    grid-column: span 2;
+    grid-column-start: 6;
+    grid-column-end: 8;
+  }
+  .serviciosrecoleccion {
+    grid-column: span 2;
+    grid-column-start: 10;
+    grid-column-end: 12;
+  }
+  #materiales {
+  }
+  .pet {
+    grid-column: span 2;
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+  .hdpesoplado {
+    grid-column: span 2;
+    grid-column-start: 6;
+    grid-column-end: 8;
+  }
+  .plasticosinyeccion {
+    grid-column: span 2;
+    grid-column-start: 10;
+    grid-column-end: 12;
+  }
+  .papel {
+    grid-column: span 2;
+    grid-column-start: 4;
+    grid-column-end: 6;
+  }
+  .carton {
+    grid-column: span 2;
+    grid-column-start: 8;
+    grid-column-end: 10;
+  }
+  #contacto {
+    background-color: #000;
+    color: #fff;
+  }
+  #contactotext {
+    grid-column: span 6;
+  }
+  #contactoimg {
+    grid-column: span 6;
+  }
 }
