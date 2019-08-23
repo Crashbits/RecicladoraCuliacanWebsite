@@ -313,6 +313,9 @@ img {
 hr {
   border: 10px solid var(--primary-color);
 }
+.whitehr {
+  border: 10px solid #fff;
+}
 
 @media (min-width: 768px) {
 }
@@ -335,6 +338,7 @@ hr {
     grid-column-start: 4;
     grid-column-end: 13;
     align-self: center;
+    text-align: right;
   }
   .navegacion a:last-child {
     padding-right: 0;
@@ -358,7 +362,6 @@ hr {
     font-size: 3.28rem;
     line-height: 0.8;
   }
-
   #home h1 span {
     font-size: 4rem;
     line-height: 0.8;
@@ -375,14 +378,25 @@ hr {
     grid-column-end: 13;
   }
   #nosotros {
+    grid-template-areas: 'nosotrosimg nosotrostext';
+  }
+  #nosotros h1 {
+    font-size: 4rem;
+    line-height: 0.8;
   }
   #nosotrostext {
     grid-area: nosotrostext;
     grid-column: span 6;
+    grid-column-start: 8;
+    grid-column-end: 12;
+    text-align: right;
+    align-self: center;
   }
   #nosotrosimg {
     grid-area: nosotrosimg;
     grid-column: span 6;
+    grid-column-start: 1;
+    grid-column-end: 7;
   }
   #mision {
   }
