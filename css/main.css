@@ -332,6 +332,7 @@ hr {
     -webkit-box-shadow: 0 3px 5px 0 rgba(50, 50, 50, 0.3);
     -moz-box-shadow: 0 3px 5px 0 rgba(50, 50, 50, 0.3);
     box-shadow: 0 3px 5px 0 rgba(50, 50, 50, 0.3);
+    grid-template-rows: 100px;
   }
   .navegacion {
     grid-column: span 10;
@@ -378,17 +379,17 @@ hr {
     grid-column-end: 13;
   }
   #nosotros {
-    grid-template-areas: 'nosotrosimg nosotrostext';
+    padding-top: 110px;
   }
-  #nosotros h1 {
+  h1 {
     font-size: 4rem;
     line-height: 0.8;
   }
   #nosotrostext {
     grid-area: nosotrostext;
     grid-column: span 6;
-    grid-column-start: 8;
-    grid-column-end: 12;
+    grid-column-start: 9;
+    grid-column-end: 13;
     text-align: right;
     align-self: center;
   }
@@ -399,37 +400,59 @@ hr {
     grid-column-end: 7;
   }
   #mision {
+    padding-top: 110px;
   }
   #misiontext {
     grid-area: misiontext;
     grid-column: span 6;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    align-self: center;
   }
   #misionimg {
     grid-area: misionimg;
     grid-column: span 6;
+    grid-column-start: 7;
+    grid-column-end: 13;
   }
   #servicios {
     margin-left: 0%;
     margin-right: 0%;
     background-color: var(--primary-color);
+    height: 500px;
+    padding-top: 110px;
+  }
+  .verticalcenter {
+    align-self: center;
   }
   .serviciostittle {
-    grid-column: span 2;
+    grid-column: span 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-auto-rows: auto;
   }
   .destruccionfiscal {
-    grid-column: span 2;
     grid-column-start: 2;
     grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    align-self: center;
   }
   .plasticosagricolas {
     grid-column: span 2;
     grid-column-start: 6;
     grid-column-end: 8;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    align-self: center;
   }
   .serviciosrecoleccion {
     grid-column: span 2;
     grid-column-start: 10;
     grid-column-end: 12;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    align-self: center;
   }
   #materiales {
   }
