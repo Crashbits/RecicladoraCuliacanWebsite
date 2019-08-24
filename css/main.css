@@ -288,7 +288,6 @@ My Styles
 
 body {
   font-family: 'Hind Madurai', sans-serif;
-  width: 100vw;
 }
 h1 {
   font-family: 'Montserrat', sans-serif;
@@ -319,7 +318,10 @@ hr {
 
 @media (min-width: 768px) {
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
+  p{
+    font-size: 1.2rem
+  }
   #menu {
     grid-area: menu;
     position: fixed;
@@ -352,12 +354,12 @@ hr {
     grid-column-start: 1;
     grid-column-end: 1;
     align-self: center;
-    width: 95%;
+    height: 90px;
   }
   #home {
     padding-top: 110px;
+    justify-items: center;
     align-self: center;
-    justify-self: center;
   }
   #home h1 {
     font-size: 3.28rem;
@@ -365,18 +367,30 @@ hr {
   }
   #home h1 span {
     font-size: 4rem;
-    line-height: 0.8;
+    line-height: 0.8; 
+  }
+  .hometext p{
+    font-size: 2rem:
   }
   #hometext {
     grid-area: hometext;
     grid-column: span 4;
+    grid-column-start: 1;
+    grid-column-end: 5;
     align-self: flex-end;
+    padding-bottom: 5%
   }
   #homeimg {
     grid-area: homeimg;
-    grid-column: span 8;
-    grid-column-start: 6;
+    grid-column: span 7;
+    grid-column-start: 5;
     grid-column-end: 13;
+    align-self: flex-end;
+  }
+  #homeimg img {
+    height: 85vh;
+    vertical-align: bottom;
+    align-self: end;
   }
   #nosotros {
     padding-top: 110px;
