@@ -388,7 +388,7 @@ hr {
     align-self: flex-end;
   }
   #homeimg img {
-    height: 85vh;
+    height: calc(100vh - 150px);
     vertical-align: bottom;
     align-self: end;
   }
@@ -415,6 +415,7 @@ hr {
   }
   #mision {
     padding-top: 110px;
+    padding-bottom: 8%;
   }
   #misiontext {
     grid-area: misiontext;
@@ -433,7 +434,7 @@ hr {
     margin-left: 0%;
     margin-right: 0%;
     background-color: var(--primary-color);
-    height: 500px;
+    height: 85vh;
     padding-top: 110px;
   }
   .verticalcenter {
