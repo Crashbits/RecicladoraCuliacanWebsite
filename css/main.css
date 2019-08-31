@@ -305,7 +305,7 @@ nav a {
   text-transform: uppercase;
   grid-column: span 2;
 }
-img {
+img, object {
   max-width: 100%;
   height: auto;
 }
@@ -314,6 +314,10 @@ hr {
 }
 .whitehr {
   border: 10px solid #fff;
+}
+h3 {
+  text-align: center;
+  text-transform: uppercase;
 }
 
 @media (min-width: 768px) {
@@ -349,17 +353,20 @@ hr {
   .navegacion a:first-child {
     padding-left: 0;
   }
-  .logo {
+  .logo{
     grid-column: span 1;
     grid-column-start: 1;
     grid-column-end: 1;
     align-self: center;
-    height: 90px;
+  }
+  .logo img {
+  height: 90px; 
+  align-self: center;
   }
   #home {
     padding-top: 110px;
-    justify-items: center;
-    align-self: center;
+    justify-items: end;
+    align-self: end;
   }
   #home h1 {
     font-size: 3.28rem;
@@ -378,7 +385,7 @@ hr {
     grid-column-start: 1;
     grid-column-end: 5;
     align-self: flex-end;
-    padding-bottom: 5%
+    
   }
   #homeimg {
     grid-area: homeimg;
@@ -391,7 +398,7 @@ hr {
     height: calc(100vh - 150px);
     vertical-align: bottom;
     align-self: end;
-  }
+}
   #nosotros {
     padding-top: 110px;
   }
@@ -402,7 +409,7 @@ hr {
   #nosotrostext {
     grid-area: nosotrostext;
     grid-column: span 6;
-    grid-column-start: 9;
+    grid-column-start: 8;
     grid-column-end: 13;
     text-align: right;
     align-self: center;
@@ -415,7 +422,7 @@ hr {
   }
   #mision {
     padding-top: 110px;
-    padding-bottom: 8%;
+    padding-bottom: 80px;
   }
   #misiontext {
     grid-area: misiontext;
@@ -434,7 +441,7 @@ hr {
     margin-left: 0%;
     margin-right: 0%;
     background-color: var(--primary-color);
-    height: 85vh;
+    height: 95vh;
     padding-top: 110px;
   }
   .verticalcenter {
@@ -444,14 +451,12 @@ hr {
     grid-column: span 4;
     grid-row-start: 1;
     grid-row-end: 1;
-    grid-auto-rows: auto;
   }
   .destruccionfiscal {
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 2;
-    align-self: center;
   }
   .plasticosagricolas {
     grid-column: span 2;
@@ -459,7 +464,6 @@ hr {
     grid-column-end: 8;
     grid-row-start: 2;
     grid-row-end: 2;
-    align-self: center;
   }
   .serviciosrecoleccion {
     grid-column: span 2;
@@ -467,43 +471,95 @@ hr {
     grid-column-end: 12;
     grid-row-start: 2;
     grid-row-end: 2;
-    align-self: center;
   }
   #materiales {
+    padding-top: 110px;
+    padding-bottom: 80px;
+  }
+  .materialestittle{
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column: span 4;
+    padding-bottom: 80px;
   }
   .pet {
     grid-column: span 2;
     grid-column-start: 2;
     grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 2;
   }
   .hdpesoplado {
     grid-column: span 2;
     grid-column-start: 6;
     grid-column-end: 8;
+    grid-row-start: 2;
+    grid-row-end: 2;
   }
   .plasticosinyeccion {
     grid-column: span 2;
     grid-column-start: 10;
     grid-column-end: 12;
+    grid-row-start: 2;
+    grid-row-end: 2;
   }
   .papel {
     grid-column: span 2;
     grid-column-start: 4;
     grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 3;
   }
   .carton {
     grid-column: span 2;
     grid-column-start: 8;
     grid-column-end: 10;
+    grid-row-start: 3;
+    grid-row-end: 3;
   }
   #contacto {
+    padding-top: 30px;
     background-color: #000;
-    color: #fff;
+    color: #FFF;
   }
   #contactotext {
-    grid-column: span 6;
+    grid-column: span 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
   }
-  #contactoimg {
-    grid-column: span 6;
+  .direccion{
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+  .map{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+.map iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+  #whatsapp {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  #facebook {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  #email {
+    grid-column-start: 3;
+    grid-column-end: 4;
+
+  }
+  footer {
+    padding-bottom: 20px;
   }
 }
