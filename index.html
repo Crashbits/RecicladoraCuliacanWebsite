@@ -286,8 +286,8 @@
         <hr />
         <p>
           Somos una empresa con gran presencia en el noroeste del país que
-          acopia una alta gama de materiales reciclables para su correcto manejo
-          y procesamiento. Separamos las botellas por su respectiva
+          acopia una alta variedad de materiales reciclables para su correcto
+          manejo y procesamiento. Separamos las botellas por su respectiva
           clasificación para facilitar su reciclaje y nos especializamos también
           en la molienda y lavado de plásticos de inyección que nos permite
           facilitar el el reutilizamiento del plastico en las fabricas.
@@ -385,13 +385,21 @@
         </p>
       </section>
       <section id="whatsapp">
-        <img src="./img/whatsapp.svg" alt="Whatsapp" />
+        <a
+          href="https://wa.me/526672912476?text=Hola,%20me%20interesa%20vender%20materiales%20reciclables"
+          ><img src="./img/whatsapp.svg" alt="Whatsapp"
+        /></a>
       </section>
       <section id="facebook">
-        <img src="./img/facebook.svg" alt="Facebook" />
+        <a
+          href="https://web.facebook.com/pg/Recicladora-Culiacan-SA-de-CV-1495864410726057"
+          ><img src="./img/facebook.svg" alt="Facebook"
+        /></a>
       </section>
       <section id="email">
-        <img src="./img/email.svg" alt="Correo Electronico" />
+        <a href="mailto: humberto.ruiz@recicladoraculiacan.com"
+          ><img src="./img/email.svg" alt="Correo Electronico"
+        /></a>
       </section>
 
       <!-- <section class="contactform">
@@ -446,59 +454,6 @@
       crossorigin
       src="https://polyfill.app/api/polyfill?features=scroll-behavior"
     ></script>
-    <script>
-      function inAC(s) {
-        s.draw('80% - 240', '80%', 0.3, {
-          delay: 0.1,
-          callback() {
-            inAC2(s);
-          }
-        });
-      }
-      function inAC2(s) {
-        s.draw('100% - 545', '100% - 305', 0.6, {
-          easing: ease.ease('elastic-out', 1, 0.3)
-        });
-      }
-      function inB(s) {
-        s.draw(beginB - 60, endB + 60, 0.1, {
-          callback() {
-            inB2(s);
-          }
-        });
-      }
-      function inB2(s) {
-        s.draw(beginB + 120, endB - 120, 0.3, {
-          easing: ease.ease('bounce-out', 1, 0.3)
-        });
-      }
-      function outAC(s) {
-        s.draw('90% - 240', '90%', 0.1, {
-          easing: ease.ease('elastic-in', 1, 0.3),
-          callback() {
-            outAC2(s);
-          }
-        });
-      }
-      function outAC2(s) {
-        s.draw('20% - 240', '20%', 0.3, {
-          callback() {
-            outAC3(s);
-          }
-        });
-      }
-      function outAC3(s) {
-        s.draw(beginAC, endAC, 0.7, {
-          easing: ease.ease('elastic-out', 1, 0.3)
-        });
-      }
-      function outB(s) {
-        s.draw(beginB, endB, 0.7, {
-          delay: 0.1,
-          easing: ease.ease('elastic-out', 2, 0.4)
-        });
-      }
-    </script>
     <script>
       (function() {
         var header = new Headroom(document.querySelector('#menu'), {
